@@ -14,6 +14,11 @@ body {
   font-family: poppins,gitbook-content-font,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
   font-size: 16px;
 }
+@media (max-width: 768px) {
+  body {
+    padding-top: 52px;
+  }
+}
 
 @media (min-width: 1440px) {
   .container {
@@ -24,6 +29,12 @@ body {
 .nav-offset {
   padding-top: 140px;
   margin-top: -140px;
+}
+@media (max-width: 768px) {
+  .nav-offset {
+    padding-top: 102px;
+    margin-top: -102px;
+  }
 }
 
 .navbar {
@@ -117,6 +128,19 @@ body {
     width: 199px;
   }
 }
+@media (max-width: 768px) {
+  .navbar .logo {
+    width: 114px;
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    height: 52px;
+  }
+  .navbar .navbar-brand {
+    padding: 7px 0;
+  }
+}
 
 .navbar-nav > li > a {
   line-height: 60px;
@@ -137,18 +161,32 @@ body {
     height: auto;
   }
 }
+@media (max-width: 768px) {
+  .my-navbar-header {
+    height: 52px;
+  }
+}
 
 .my-navbar-toggle {
   margin-top: 30px;
   background: none;
   border: none;
 }
+@media (max-width: 768px) {
+  .my-navbar-toggle {
+    margin-top: 14px;
+  }
+  .my-navbar-toggle img {
+    width: 27px;
+  }
+}
 
 .my-navbar-collapse {
   margin: 0 -15px;
 }
 .my-navbar-collapse .nav {
-  background-color: #292a2a;
+  background-color: #070707;
+  height: 100vh;
 }
 .my-navbar-collapse a {
   color: #fff;
@@ -158,6 +196,10 @@ body {
   background: none !important;
   color: #6EE3C0;
 }
+.my-navbar-collapse a.external span {
+  display: block;
+  background: url(../images/icon-external.png) no-repeat right center/20px;
+}
 @media (min-width: 992px) {
   .my-navbar-collapse {
     display: block !important;
@@ -165,6 +207,7 @@ body {
   .my-navbar-collapse .nav {
     float: right;
     background: none;
+    height: auto;
   }
   .my-navbar-collapse .nav li {
     display: inline-block;
@@ -173,17 +216,40 @@ body {
     padding: 0 15px;
     line-height: 90px;
   }
+  .my-navbar-collapse .nav a span {
+    background: none;
+  }
 }
 
+@media (max-width: 768px) {
+  .you-coin {
+    padding-bottom: 48px;
+    overflow: hidden;
+  }
+}
+
+.header .placeholder {
+  height: 151px;
+}
+@media (max-width: 768px) {
+  .header .placeholder {
+    height: 29px;
+  }
+}
 .header h1 {
   margin: 0;
   font-size: 65px;
   color: #fff;
   font-family: poppins-bold;
 }
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 23px;
+  }
+}
 .header .text-swiper {
   margin: 46px auto 55px;
-  width: 800px;
+  max-width: 800px;
   height: 71px;
   overflow: hidden;
 }
@@ -201,6 +267,16 @@ body {
   font-size: 65px;
   font-family: poppins-bold;
 }
+@media (max-width: 768px) {
+  .header .text-swiper {
+    margin-top: 11px;
+    margin-bottom: 21px;
+    height: 24px;
+  }
+  .header .text-swiper h2 {
+    font-size: 23px;
+  }
+}
 .header p {
   padding: 0;
   margin-top: 62px;
@@ -209,6 +285,12 @@ body {
   color: #fff;
   line-height: 1.6;
   font-weight: lighter;
+}
+@media (max-width: 768px) {
+  .header p {
+    margin-top: 21px;
+    font-size: 12px;
+  }
 }
 .header .desc {
   position: relative;
@@ -236,21 +318,71 @@ body {
   top: -10px;
   left: 49px;
 }
+@media (max-width: 768px) {
+  .header .desc .widget:nth-child(1) {
+    width: 72px;
+    top: 0;
+    left: 22px;
+  }
+}
 .header .desc .widget:nth-child(2) {
   top: 72px;
   right: 0;
+}
+@media (max-width: 768px) {
+  .header .desc .widget:nth-child(2) {
+    width: 24px;
+    top: -10px;
+    right: 29px;
+  }
 }
 .header .desc .widget:nth-child(3) {
   top: 345px;
   right: 307px;
 }
+@media (max-width: 768px) {
+  .header .desc .widget:nth-child(3) {
+    width: 54px;
+    top: 77px;
+    right: 89px;
+  }
+}
 .header .desc .widget:nth-child(4) {
   top: 655px;
   right: 69px;
 }
+@media (max-width: 768px) {
+  .header .desc .widget:nth-child(4) {
+    width: 140px;
+    top: 223px;
+    right: -75px;
+  }
+}
 .header .desc .widget:nth-child(5) {
   top: 1086px;
   right: 468px;
+}
+@media (max-width: 768px) {
+  .header .desc .widget:nth-child(5) {
+    width: 71px;
+    top: 511px;
+    right: 42px;
+  }
+}
+@media (max-width: 768px) {
+  .header .desc {
+    padding-top: 120px;
+    padding-bottom: 0;
+  }
+  .header .desc h3 {
+    margin-bottom: 21px;
+    font-size: 14px;
+  }
+  .header .desc p {
+    width: 261px;
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 @keyframes flip {
@@ -291,6 +423,11 @@ body {
   color: #01E8BA;
   font-size: 20px;
 }
+@media (max-width: 768px) {
+  .head-bg h2 {
+    font-size: 14px;
+  }
+}
 .head-bg p {
   margin: 18px auto 0;
   max-width: 956px;
@@ -300,12 +437,39 @@ body {
   line-height: 57px;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .head-bg p {
+    width: 289px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .head-bg {
+    background: url(../images/tit-bg.png) repeat-x top left/1px 161px;
+    border-radius: 20px;
+  }
+}
 
 .ecosystem .head {
   padding: 149px 62px 87px;
 }
+@media (max-width: 768px) {
+  .ecosystem .head {
+    margin-top: 26px;
+    padding: 31px 0 0;
+  }
+}
 .ecosystem .img {
   width: 53%;
+}
+@media (max-width: 768px) {
+  .ecosystem .img {
+    width: 100%;
+  }
+  .ecosystem .img img {
+    width: 100%;
+  }
 }
 .ecosystem .planet {
   padding-left: 51px;
@@ -314,6 +478,11 @@ body {
 }
 .ecosystem .planet + .planet {
   margin-left: 3%;
+}
+@media (max-width: 768px) {
+  .ecosystem .planet + .planet {
+    margin-left: 0;
+  }
 }
 .ecosystem .planet .tit {
   margin-left: -51px;
@@ -325,16 +494,49 @@ body {
   line-height: 40px;
   vertical-align: middle;
 }
+@media (max-width: 768px) {
+  .ecosystem .planet .tit h3 {
+    margin-left: 5px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .ecosystem .planet .tit {
+    margin-left: -27px;
+  }
+}
 .ecosystem .planet p {
   margin: 0;
   margin-top: 15px;
   line-height: 27px;
   font-size: 18px;
 }
+@media (max-width: 768px) {
+  .ecosystem .planet p {
+    margin-top: 0;
+  }
+}
+@media (max-width: 768px) {
+  .ecosystem .planet {
+    padding-left: 27px;
+    margin-top: 50px !important;
+    margin-left: 0;
+    width: 100% !important;
+  }
+  .ecosystem .planet img {
+    width: 20px;
+  }
+}
 .ecosystem .planet1,
 .ecosystem .planet2 {
   margin-left: 6% !important;
   width: 36%;
+}
+@media (max-width: 768px) {
+  .ecosystem .planet1,
+  .ecosystem .planet2 {
+    margin-left: 0 !important;
+  }
 }
 .ecosystem .planet1 {
   margin-top: 101px;
@@ -342,9 +544,26 @@ body {
 .ecosystem .planet2 {
   margin-top: 108px;
 }
+.ecosystem .pt {
+  padding-top: 90px;
+}
+@media (max-width: 768px) {
+  .ecosystem .pt {
+    padding-top: 0;
+  }
+}
 
 .tokenomics .head {
   padding: 156px 63px 0;
+}
+@media (max-width: 768px) {
+  .tokenomics .head {
+    margin-top: 87px;
+    padding: 31px 0 0;
+  }
+  .tokenomics .head p {
+    text-align: left;
+  }
 }
 .tokenomics .chart {
   padding: 131px 50px 0;
@@ -378,6 +597,34 @@ body {
   width: 100%;
   max-width: 648px;
 }
+@media (max-width: 768px) {
+  .tokenomics .chart {
+    padding: 53px 0 0;
+    margin-left: 0 !important;
+  }
+  .tokenomics .chart ul {
+    margin-bottom: 24px;
+    padding-top: 0;
+  }
+  .tokenomics .chart ul li {
+    float: left;
+    width: 30%;
+    line-height: 40px;
+  }
+  .tokenomics .chart ul li + li {
+    margin-top: 0;
+    margin-left: 15px;
+  }
+  .tokenomics .chart ul li .data {
+    width: 100%;
+  }
+  .tokenomics .chart ul .char-h {
+    font-size: 15px;
+  }
+  .tokenomics .chart ul .char-c {
+    font-size: 12px;
+  }
+}
 .tokenomics .contract {
   margin-top: 201px;
 }
@@ -386,6 +633,14 @@ body {
 }
 .tokenomics .contract .contract-row .col-md-6 {
   padding: 0 24px;
+}
+@media (max-width: 768px) {
+  .tokenomics .contract .contract-row {
+    margin: 0 -15px;
+  }
+  .tokenomics .contract .contract-row .col-md-6 {
+    padding: 0 15px;
+  }
 }
 .tokenomics .contract .img {
   margin-left: 30px;
@@ -428,6 +683,49 @@ body {
 .tokenomics .contract .card p {
   font-size: 18px;
   line-height: 28px;
+}
+@media (max-width: 768px) {
+  .tokenomics .contract {
+    margin-top: 48px;
+  }
+  .tokenomics .contract .img {
+    display: block;
+    margin: 0 auto;
+    width: 72px;
+  }
+  .tokenomics .contract h3 {
+    display: block;
+    margin: 29px auto 39px;
+    width: 300px;
+    text-align: center;
+    font-size: 23px;
+    line-height: 29px;
+    font-family: poppins-bold;
+  }
+  .tokenomics .contract .desc {
+    margin: 0 auto 76px;
+    width: 300px;
+    font-size: 12px;
+    text-align: center;
+  }
+  .tokenomics .contract .card {
+    margin-bottom: 12px;
+    padding: 31px 16px 0;
+    height: 175px;
+    background-size: auto 100%;
+    border-radius: 20px;
+  }
+  .tokenomics .contract .card.mb-68 {
+    margin-bottom: 12px;
+  }
+  .tokenomics .contract .card h4 {
+    margin-bottom: 17px;
+    font-size: 15px;
+  }
+  .tokenomics .contract .card p {
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
 
 .roadmap .head {
@@ -493,6 +791,11 @@ body {
   position: relative;
   line-height: 1;
 }
+@media (max-width: 768px) {
+  .roadmap .swiper-ul li {
+    padding-left: 21px;
+  }
+}
 .roadmap .swiper-ul li::before {
   position: absolute;
   top: 5px;
@@ -503,8 +806,38 @@ body {
   border: 2px solid #01E8BA;
   content: '';
 }
+@media (max-width: 768px) {
+  .roadmap .swiper-ul li::before {
+    margin-top: -2px;
+    width: 9px;
+    height: 9px;
+  }
+}
 .roadmap .swiper-ul li + li {
   margin-top: 36px;
+}
+@media (max-width: 768px) {
+  .roadmap .head {
+    margin-top: 74px;
+    padding-top: 31px;
+    height: 200px;
+  }
+  .roadmap .roadmap-swiper {
+    padding-bottom: 60px;
+    margin-top: -74px;
+    font-size: 15px;
+  }
+  .roadmap .swiper-nav {
+    margin-bottom: 47px;
+    width: 100%;
+  }
+  .roadmap .swiper-nav li {
+    padding: 0 10px;
+  }
+  .roadmap .swiper-nav a {
+    font-size: 15px;
+    line-height: 29px;
+  }
 }
 
 .footer {
@@ -523,7 +856,7 @@ body {
   margin-left: 60px;
 }
 .footer h2 {
-  margin: 0;
+  margin-bottom: 0;
   color: #01E8BA;
   font-size: 20px;
 }
@@ -569,6 +902,46 @@ body {
 .footer .copy {
   color: rgba(184, 184, 184, 0.51);
   font-size: 18px;
+}
+@media (max-width: 768px) {
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 48px;
+  }
+  .footer .partners {
+    margin-top: 40px;
+  }
+  .footer .partners span {
+    margin-bottom: 26px;
+  }
+  .footer .partners span + span {
+    margin-left: 30px;
+  }
+  .footer p {
+    margin: 64px auto 0;
+    width: 266px;
+    font-size: 20px;
+  }
+  .footer .msg {
+    margin: 14px auto 57px;
+    width: 225px;
+    font-size: 14px;
+  }
+  .footer .community {
+    margin: 48px 0 48px -25px;
+  }
+  .footer .community a {
+    display: inline-block;
+    margin-bottom: 25px;
+    margin-left: 25px;
+  }
+  .footer .community a .icon {
+    width: 44px;
+    height: 44px;
+  }
+  .footer .copy {
+    font-size: 12px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

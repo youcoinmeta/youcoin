@@ -12,6 +12,7 @@
   <link rel="preload" as="font" href="./fonts/poppins-bold.woff2">
   <link rel="preload" as="font" href="./fonts/poppins-bold.woff">
   <link rel="preload" as="font" href="./fonts/poppins-bold.ttf">
+  <link rel="shortcut icon" href="./favicon.ico">
   <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="./libs/swiper4/css/swiper.min.css">
   <link rel="stylesheet" href="./libs/aos/aos.css">
@@ -61,7 +62,6 @@
               <span>APP (SERO)</span>
             </a>
           </li>
-          
         </ul>
       </div><!-- /.navbar-collapse -->
 
@@ -70,10 +70,10 @@
   <!-- 导航栏 end -->
 
   <!-- YouCoin start -->
-  <section class="nav-offset container" id="home">
+  <section class="you-coin nav-offset container" id="home">
     <div class="header text-center">
       <!-- 不要删除下面这个div，aos.js有个未知bug需要加上这个div才能解决 -->
-      <div style="height:151px;"></div>
+      <div class="placeholder"></div>
       <h1 data-aos="fade-up">A Revolutionary Privacy</h1>
       <div class="text-swiper">
         <div class="flip">
@@ -131,7 +131,7 @@
           <p data-aos="fade-up" data-aos-delay="200">With the gaming features, users can earn while they enjoy the game competition through the Play-to-Earn element. The YouCoin Metaverse has a gaming ecosystem and will contain land, resources, and props. They will be unique NFT tokens and can be accessed by trading $UCON.</p>
         </div>
       </div>
-      <div class="clearfix" style="padding-top: 90px;">
+      <div class="clearfix" class="pt">
         <!-- SocialFi -->
         <div class="planet pull-left" data-aos="fade-up">
           <div class="tit">
@@ -170,7 +170,7 @@
 
     <div class="chart row">
       <div class="col-md-4">
-        <ul>
+        <ul class="clearfix">
           <li data-aos="fade-up">
             <div class="data center-block">
               <div class="char-h">Ticker</div>
@@ -203,11 +203,14 @@
         <div data-aos="fade-up">
           <img src="./images/bubble.png" alt="Contract logo" class="img">
         </div>
-        <h3 data-aos="fade-up" data-aos-delay="200">
+        <h3 class="hidden-xs hidden-sm" data-aos="fade-up" data-aos-delay="200">
           Smart<br>
           Contracts,<br>
           Powered by the<br>
           $UCON Token
+        </h3>
+        <h3 class="hidden-md hidden-lg" data-aos="fade-up" data-aos-delay="200">
+          Smart Contracts, <br> Powered by the $UCON <br> Token
         </h3>
         <p class="desc" data-aos="fade-up" data-aos-delay="400">As a decentralized blockchain platform, YouCoin requires a utility token to function. Our token, UCON, is central to the design of the YouCoin Metaverse network.</p>
       </div>
@@ -339,8 +342,8 @@
         </div>
   
         <!-- 如果需要导航按钮 -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev hidden-xs hidden-sm"></div>
+        <div class="swiper-button-next hidden-xs hidden-sm"></div>
       </div>
     </div>
   </section>
@@ -353,37 +356,48 @@
       <!-- 合作伙伴 -->
       <div class="partners">
         <span>
-          <img src="./images/partners1.jpg" alt="">
+          <img src="./images/partners1.jpg" alt="" class="hidden-xs hidden-sm">
+          <img src="./images/partners1.jpg" alt="" class="hidden-md hidden-lg" width="49">
         </span>
         <span>
-          <img src="./images/partners2.jpg" alt="">
+          <img src="./images/partners2.jpg" alt="" class="hidden-xs hidden-sm">
+          <img src="./images/partners2.jpg" alt="" class="hidden-md hidden-lg" width="87">
         </span>
         <span>
-          <img src="./images/partners3.jpg" alt="">
+          <img src="./images/partners3.jpg" alt="" class="hidden-xs hidden-sm">
+          <img src="./images/partners3.jpg" alt="" class="hidden-md hidden-lg" width="76">
         </span>
         <span>
-          <img src="./images/partners4.jpg" alt="">
+          <img src="./images/partners4.jpg" alt="" class="hidden-xs hidden-sm">
+          <img src="./images/partners4.jpg" alt="" class="hidden-md hidden-lg" width="55">
         </span>
         <span>
-          <img src="./images/partners5.jpg" alt="">
+          <img src="./images/partners5.jpg" alt="" class="hidden-xs hidden-sm">
+          <img src="./images/partners5.jpg" alt="" class="hidden-md hidden-lg" width="49">
         </span>
         <span>
-          <img src="./images/partners6.jpg" alt="">
+          <img src="./images/partners6.jpg" alt="" class="hidden-xs hidden-sm">
+          <img src="./images/partners6.jpg" alt="" class="hidden-md hidden-lg" width="108">
         </span>
         <span>
-          <img src="./images/partners7.jpg" alt="">
+          <img src="./images/partners7.jpg" alt="" class="hidden-xs hidden-sm">
+          <img src="./images/partners7.jpg" alt="" class="hidden-md hidden-lg" width="69">
         </span>
         <span>
-          <img src="./images/partners8.jpg" alt="">
+          <img src="./images/partners8.jpg" alt="" class="hidden-xs hidden-sm">
+          <img src="./images/partners8.jpg" alt="" class="hidden-md hidden-lg" width="105">
         </span>
         <span>
-          <img src="./images/partners9.jpg" alt="">
+          <img src="./images/partners9.jpg" alt="" class="hidden-xs hidden-sm">
+          <img src="./images/partners9.jpg" alt="" class="hidden-md hidden-lg" width="74">
         </span>
         <span>
-          <img src="./images/partners10.jpg" alt="">
+          <img src="./images/partners10.jpg" alt="" class="hidden-xs hidden-sm">
+          <img src="./images/partners10.jpg" alt="" class="hidden-md hidden-lg" width="112">
         </span>
         <span>
-          <img src="./images/partners11.jpg" alt="">
+          <img src="./images/partners11.jpg" alt="" class="hidden-xs hidden-sm">
+          <img src="./images/partners11.jpg" alt="" class="hidden-md hidden-lg" width="184">
         </span>
       </div>
       <p>Join the Projects Already Building on YouCoin</p>

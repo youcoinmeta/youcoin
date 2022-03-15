@@ -2,7 +2,12 @@ $(function() {
   // 导航跟随
   $('#nav').onePageNav({
     changeHash: true,
-    filter: ':not(.external)'
+    filter: ':not(.external)',
+    begin: function() {
+      if (window.innerWidth < 768) {
+        $('.my-navbar-collapse').slideUp()
+      }
+    }
   })
   setTimeout(function() {
     document.documentElement.scrollTop += 1
