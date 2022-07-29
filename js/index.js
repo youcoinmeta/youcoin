@@ -50,11 +50,11 @@ $(function() {
     roadmapSwiper.slideToLoop(index)
   })
 
-  var roadmapSwiper = new Swiper ('.roadmap-swiper .swiper-container', {
+  var roadmapSwiper = new Swiper('.roadmap-swiper .swiper-container', {
     loop: true, // 循环模式选项
     autoHeight: true,
     autoplay: {
-      delay: 5000,
+      delay: 20000,
       disableOnInteraction: false
     },
     // 如果需要前进后退按钮
@@ -73,4 +73,10 @@ $(function() {
       }
     }
   })
+  roadmapSwiper.el.onmouseover = function(){
+    roadmapSwiper.autoplay.stop()
+  }
+  roadmapSwiper.el.onmouseout = function(){
+    roadmapSwiper.autoplay.start()
+  }
 })
