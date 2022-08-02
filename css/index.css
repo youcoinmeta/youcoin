@@ -771,12 +771,12 @@ body {
 .roadmap .swiper-nav {
   padding: 0;
   margin: 0 auto 127px;
-  width: 671px;
+  width: 800px;
   list-style: none;
 }
 .roadmap .swiper-nav li {
   float: left;
-  width: 20%;
+  width: 16.66%;
   text-align: center;
 }
 .roadmap .swiper-nav a {
