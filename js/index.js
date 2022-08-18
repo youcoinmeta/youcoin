@@ -1,5 +1,5 @@
 $(function() {
-  // 导航跟随
+
   $('#nav').onePageNav({
     changeHash: true,
     filter: ':not(.external)',
@@ -13,18 +13,18 @@ $(function() {
     document.documentElement.scrollTop += 1
     document.body.scrollTop += 1
   }, 1)
-  // 移动端点击展开收缩菜单
+
   $('#collapse1').on('click', function() {
     $('.my-navbar-collapse').stop().slideToggle()
   })
-  // PC端鼠标悬浮菜单
+
   $('.options-btn-wrap').hover(function() {
     $(this).children('.menus-wrap').stop().fadeIn()
   }, function() {
     $(this).children('.menus-wrap').stop().fadeOut()
   })
 
-  // 导航自适应
+
   $(window).on('resize', setNavContainer)
   setNavContainer()
   function setNavContainer() {
@@ -37,12 +37,12 @@ $(function() {
 })
 
 ;(function() {
-  // 页面动画效果
+
   AOS.init()
 })()
 
 $(function() {
-  // 轮播
+
   var swiperNavs = $('.swiper-nav a')
 
   swiperNavs.on('click', function() {
@@ -51,13 +51,13 @@ $(function() {
   })
 
   var roadmapSwiper = new Swiper('.roadmap-swiper .swiper-container', {
-    loop: true, // 循环模式选项
+    loop: true, 
     autoHeight: true,
     autoplay: {
       delay: 20000,
       disableOnInteraction: false
     },
-    // 如果需要前进后退按钮
+
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
