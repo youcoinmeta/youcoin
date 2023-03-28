@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -18,35 +18,65 @@
   <link rel="stylesheet" href="./libs/aos/aos.css">
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="./css/index-custom.css">
-  <title>YouCoin</title>
+  <link rel="stylesheet" href="./css/custom.css">  
+  <title>YouCoin</title>   
 </head>
-<body>
+<body id="body" class="body_open">
   <!-- start -->
-  <nav class="navbar navbar-inverse navbar-fixed-top">
+
+  <nav class="navbar navbar-inverse navbar-fixed-top navbar_open" id="navbar">
+      <div class="top" id="top" style="opacity:1">
+        <div class="closeBanner">
+         <a href="javascript:;" id="closeBanner"><img src="images/X.png"></a>
+        </div>
+      <div class="banner">
+       <div class="banner_logo"><img src="images/rocket.png"></div>
+       <div class="banner_text">
+           <div class="banner_text_title">Latest dApp Launch!!</div>
+           <div class="banner_text_page">
+           <span class="word_style1">To access YouCoin, login using your crypto wallet, such as MetaMask to:</span>
+           <span><a href="https://dapp.youcoinmeta.com"> https://dapp.youcoinmeta.com</a></span>
+           <span class="word_style2"> - check the URL carefully.</span>
+           </div>
+       </div>
+      </div>
+    
+    </div>
     <!-- <div class="container-fluid"> -->
+    <div class="container_bg">
     <div class="container">
       <div class="my-navbar-header">
+
         <button type="button" class="my-navbar-toggle pull-right hidden-md hidden-lg" id="collapse1" aria-expanded="false">
           <img src="./images/icon-menu.png" alt="menu btn">
         </button>
+        <div class="nav_2">
+          <a href="https://dapp.youcoinmeta.com">dApp</a>
+        </div>
         <a class="navbar-brand" href="/">
           <img src="./images/logo.png" alt="logo" class="logo" >
         </a>
       </div>
-
+      <div class="nav_1">
+          <a href="https://dapp.youcoinmeta.com">dApp</a>
+      </div>
       <div class="collapse my-navbar-collapse">
+
         <ul class="nav" id="nav">
-          <li><a href="#home">HOME</a></li>
+          <li class="current"><a href="#home">HOME</a></li>
           <li><a href="#ecosystem">ECOSYSTEM</a></li>
           <li><a href="#tokenomics">TOKENOMICS</a></li>
           <li><a href="#roadmap">ROADMAP</a></li>
           <li><a href="#partners">PARTNERS</a></li>
           <li><a href="#community">COMMUNITY</a></li>
           <li><a href="./YouCoinWP.pdf" target="_blank" class="external">WHITEPAPER</a></li>
+          
         </ul>
+
       </div><!-- /.navbar-collapse -->
 
     </div><!-- /.container-fluid -->
+    </div>
   </nav>
   <!-- end -->
 
@@ -86,7 +116,7 @@
 
   <!-- Ecosystem start -->
   <section class="ecosystem container" id="ecosystem">
-    <header class="head head-bg">
+    <header class="head head-bg head_open" id="ecosystem_head">
       <h2 data-aos="fade-up">ECOSYSTEM</h2>
       <p data-aos="fade-up" data-aos-delay="200">All ecosystems in the YouCoin Metaverse are perfectly looped through eco-finance and $UCON governance token.</p>
     </header>
@@ -144,7 +174,7 @@
 
   <!-- Tokenomics start -->
   <section class="tokenomics container" id="tokenomics">
-    <header class="head head-bg">
+    <header class="head head-bg head_open" id="tokenomics_head">
       <h2 data-aos="fade-up">TOKENOMICS</h2>
       <p data-aos="fade-up" data-aos-delay="200">$UCON is the equity governance token of every ecosystem on the YouCoin Metaverse. Through the incentive and burning mechanism of $UCON, there will be a long-term upward trend with the closed-loop presentation of YouCoin Metaverse Ecological Finance.</p>
     </header>
@@ -237,7 +267,7 @@
 
   <!-- Roadmap start -->
   <section class="roadmap container" id="roadmap">
-    <div class="head head-bg">
+    <div class="head head-bg head_open" id="roadmap_head">
       <h2 data-aos="fade-up">ROADMAP</h2>
       <p class="text-center" data-aos="fade-up" data-aos-delay="200">See what’s waiting for you...</p>
     </div>
@@ -452,6 +482,7 @@
   </footer>
 
   <script src="./libs/jquery/jquery.min.js"></script>
+  <script src="./js/banner.js"></script>
   <script src="./libs/bootstrap/js/bootstrap.min.js"></script>
   <script src="./libs/swiper4/js/swiper.min.js"></script>
   <script src="./libs/aos/aos.js"></script>
